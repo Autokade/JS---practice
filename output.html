@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+     <!--JavaScript can "display" data in different ways:
+
+Writing into an HTML element, using innerHTML.
+Writing into the HTML output using document.write().
+Writing into an alert box, using window.alert().
+Writing into the browser console, using console.log()-->
+<h2>My first web page
+</h2>
+<p>my first paragraph</p>
+<p id="demo">
+</p>
+<script>
+    document.getElementById('demo').innerHTML = 5+6
+</script>
+
+
+
+<p>Never call document.write after the document has finished.
+    it wil overqwrite teh whole document
+</p>
+<script>
+    document.write(5+6)
+</script>
+
+Using document.write() after an HTML document is loaded, will delete all existing HTML:
+
+
+<button type="button" onclick="document.write(5 + 6)">Try it</button>
+
+<!--In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:-->
+
+<script>
+    window.alert(5+6);
+
+</script>
+<script>
+    alert(5+6);
+</script>
+<h2>Activate Debugging</h2>
+
+<p>F12 on your keyboard will activate debugging.</p>
+<p>Then select "Console" in the debugger menu.</p>
+<p>Then click Run again.</p>
+
+<script>
+    console.log(5+6)
+</script>
+    </body>
+    </html>

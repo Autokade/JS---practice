@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript index</h1>
+    <h2>the index() method</h2>
+    <p>the index method() returns teh position of of first ocurence of a string in a string.</p>
+    <p>the postion of the first ocurence of "locate" is</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let text = `Please locate where "locate" is `
+        let index = text.indexOf("locate");
+        document.getElementById("demo").innerHTML = index;
+    </script>
+
+
+<h1>JavaScript Strings</h1>
+<h2>The indexOf() Method</h2>
+
+<p>Both indexOf() and lastIndexOf() return -1 if the text is not found:</p>
+<p id="demo1"></p>
+<script>
+    let text1 = "please locate where 'locate' is";
+    let index1 = text1.indexOf("John");
+    document.getElementById("demo1").innerHTML = index1;
+</script>
+
+<h1>javascript Strings</h1>
+<h2>the indexof() method</h2>
+
+<p>teh indexof() method  accepts a second parameter as the startin position for the search</p>
+<p id="demo2"></p>
+<script>
+    let text2 = "please locate where 'locate' is";
+    let index2 = text2.indexOf("locate",15);
+    document.getElementById("demo2").innerHTML = index2;
+</script>
+
+<h1>Javascript Strings</h1>
+<h2>The search() method</h2>
+
+
+<p>the search() method returns the posiiton of the first occurence of a string in a string.</p>
+<p>return the position of first occurence of a regular expression</p>
+<p id="demo3"></p>
+
+<script>
+    let text3 = "Please locate the 'locate' occurence";
+    let index3 = text3.search(/locate/);
+    document.getElementById("demo3").innerHTML = index3;
+</script>
+
+<!--The two methods, indexOf() and search(), are equal?
+
+They accept the same arguments (parameters), and return the same value?
+
+The two methods are NOT equal. These are the differences:
+
+The search() method cannot take a second start position argument.
+The indexOf() method cannot take powerful search values (regular expressions).-->
+<h1>JavaScript strings</h1>
+<h2>The match() method</h2>
+<p>perform a global search for 'ain'</p>
+<p id="demo4"></p>
+<script>
+    let text4 = "the rain in SPAIN stays mainly in the plain";
+    const myArr = text4.match(/AIN/gi);
+    document.getElementById("demo4").innerHTML = myArr.length + " " + myArr;
+</script>
+
+
+
+
+<h1>Javascrit strings</h1>
+<h2>The matchall() method</h2>
+
+<p>ES2020 introduced the string and method matchAll()</p>
+
+<p id="demo5"></p>
+
+<script>
+    let text5 = `I love cats. Cats are very easy to love. Cats are very popular`
+    const iterator = text5.matchAll(/Cats/gi);
+    document.getElementById("demo5").innerHTML = Array.from(iterator)
+</script>
+
+
+<h1>Javascript strings</h1>
+<h2>The includes() method</h2>
+
+<p>Check if a string include "world"</p>
+<p id="demo6"></p>
+
+
+<p>the include() method is not supported in internet explorer</p>
+
+<script>
+    let text6 = "hello world, welcoome to the universe.";
+    document.getElementById("demo6").innerHTML = text6.includes("world")
+
+</script>
+
+
+
+<p>Check if a string includes "world". Start at position 12:</p>
+
+<p id="demo7"></p>
+
+<script>
+    let text7 = "Hello world, welcome to the universe.";
+    document.getElementById("demo7").innerHTML = text7.includes("world", 12);
+    </script>
+
+
+<h1>Javascript strings</h1>
+<h2>the startswith() method</h2>
+<p>Check if a string starts with "hello"</p>
+
+<p id="demo8"></p>
+
+<p>The startsWith() method is not supported on internet explorer</p>
+
+<script>
+    let text8 = "Hello everyone, welcome to the universe.";
+    document.getElementById("demo8").innerHTML = text8 + "<br>" + text8.startsWith("Hello")
+</script>
+
+
+<h1>JavaScript Strings</h1>
+<h2>The startsWith() Method</h2>
+
+<p id="demo9"></p>
+
+<p>The startsWith() method is not supported in Internet Explorer.</p>
+
+<script>
+let text9 = "Hello world, welcome to the universe.";
+document.getElementById("demo9").innerHTML = text9.startsWith("world", 5);
+</script>
+
+
+
+    
+</body>
+</html>

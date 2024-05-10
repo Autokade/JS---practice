@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript expressions</h2>
+    <p>expressive compute to values</p>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = "john" + " " + "doe";
+    </script>
+    <h1>javascript variables</h1>
+    <p>create a variable, assign a value to it, and display it</p>
+    <p id="demo1"></p>
+
+    <script>
+      let carName = "VOLVO";
+      document.getElementById("demo1").innerHTML = carName;
+    </script>
+    <!--A variable declared without a value will have the value undefined.-->
+    <!--If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.-->
+    <h1>JavaScript Variables</h1>
+
+    <p>The result of adding 2 + 3 + "5" is:</p>
+    <p id="demo"></p>
+
+    <script>
+      let x = 2 + 3 + "5";
+      document.getElementById("demo").innerHTML = x;
+    </script>
+    
+  </body>
+</html>

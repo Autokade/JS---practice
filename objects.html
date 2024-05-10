@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Javascript variables</h2>
+    <p id="demo"></p>
+    <script>
+      //create and display a variable//
+      let car = "fiat";
+      document.getElementById("demo").innerHTML = car;
+    </script>
+    <h2>javascript objects</h2>
+    <p>there are two different ways to access an object property</p>
+    <p>you can use a person.property or person["property"]</p>
+    <p id="demo1"></p>
+    <script>
+      //create a number//
+      const person1 = {
+        firstName: "john",
+        lastName: "doe",
+        id: 5566,
+      };
+      //display some data for the object
+      document.getElementById("demo1").innerHTML =
+        person1.firstName + " " + person1.lastName;
+    </script>
+    <h2>JavaScript Objects</h2>
+
+    <p>There are two different ways to access an object property.</p>
+
+    <p>You can use person.property or person["property"].</p>
+
+    <p id="demo2"></p>
+
+    <script>
+      // Create an object:
+      const person2 = {
+        firstName: "John",
+        lastName: "Doe",
+        id: 5566,
+      };
+
+      // Display some data from the object:
+      document.getElementById("demo2").innerHTML =
+        person2["firstName"] + " " + person2["lastName"];
+    </script>
+    <!--What is this?
+In JavaScript, the this keyword refers to an object.
+
+Which object depends on how this is being invoked (used or called).
+
+The this keyword refers to different objects depending on how it is used:
+
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), apply(), and bind() can refer this to any object.-->
+<h1>Javascript html events</h1>
+<h2>the oneclick attribute</h2>
+
+<button onclick="document.getElementById('demo3').innerHTML=Date()">The time is?</button>
+<p id="demo3"></p>
+
+<h1>Javascript HTMl attributes</h1>
+<h2>The onclick attribute</h2>
+<p>click the button to display the date.</p>
+<button onclick="displayDate()">The time is?</button>
+<script>
+    function displayDate(){
+        document.getElementById("demo3").innerHTML = Date();
+    }
+</script>
+<!--Common HTML Events
+Here is a list of some common HTML events:
+
+Event	Description
+onchange	An HTML element has been changed
+onclick	The user clicks an HTML element
+onmouseover	The user moves the mouse over an HTML element
+onmouseout	The user moves the mouse away from an HTML element
+onkeydown	The user pushes a keyboard key
+onload	The browser has finished loading the page
+-->
+
+
+  </body>
+</html>

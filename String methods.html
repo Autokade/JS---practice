@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>javascript string</h1>
+    <h2>The charAt() Method</h2>
+    <p id="demo"></p>
+
+    <script src="String methods.js"></script>
+
+    <h1>JavaScript String</h1>
+    <h2>The charCodeAt() Method</h2>
+    <p id="demo1"></p>
+    <script src="String methods1.js"></script>
+    <!--JavaScript String
+The charCodeAt() Method
+The charCodeAt() method returns the unicode of the character at a given position in a string:-->
+    <h1>javascript methods</h1>
+    <h2>The at() method</h2>
+    <p id="demo2"></p>
+    <script>
+      const name = "w3Schools.in";
+      let letter = name.at(2);
+      document.getElementById("demo2").innerHTML = letter;
+    </script>
+    <h1>JavaScript Strings</h1>
+    <h2>Bracket Notation</h2>
+
+    <p>The bracked notation [] returns an indexed element from a string:</p>
+
+    <p id="demo3"></p>
+
+    <script>
+      const name1 = "W3Schools";
+      let letter1 = name[2];
+
+      document.getElementById("demo3").innerHTML = letter1;
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>
+      The substring() method extract a part of a string and returns the
+      extracted parts in a new string:
+    </p>
+
+    <p id="demo6"></p>
+    <script>
+      let str = "Apple, Banana, Kiwi";
+      document.getElementById("demo6").innerHTML = str.substring(7, 13);
+    </script>
+
+    <h1>the javascript methods</h1>
+    <p>Covert to upper string</p>
+    <button onclick="myFunction()">try it</button>
+    <p id="demo7">Hello world</p>
+    <script>
+      function myFunction() {
+        let text = document.getElementById("demo7").innerHTML;
+        document.getElementById("demo7").innerHTML = text.toUpperCase();
+      }
+    </script>
+
+    <h1>JavaScript String Methods</h1>
+    <p>Convert string to lower case:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo">Hello World!</p>
+
+    <script>
+      function myFunction() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("demo").innerHTML = text.toLowerCase();
+      }
+    </script>
+
+    <h1>the javascript methods</h1>
+    <h2>the cocat() mathod</h2>
+    <p>the concat method joins 2 or more strings</p>
+    <p id="demo8"></p>
+    <script>
+      let text1 = "Hello";
+      let text2 = "World";
+      let text3 = text1.concat(" ", text2);
+      document.getElementById("demo8").innerHTML = text3;
+    </script>
+
+    <h1>Javascript salad</h1>
+    <h2>the trim method</h2>
+    <p id="demo4"></p>
+    <script>
+      let text4 = "     Hello world     ";
+      let text5 = text4.trim();
+      document.getElementById("demo4").innerHTML =
+        "length text4 = " + text4.length + "<br>length text5 = " + text5.length;
+    </script>
+
+    <!--JavaScript String trimStart()
+ECMAScript 2019 added the String method trimStart() to JavaScript.
+
+The trimStart() method works like trim(), but removes whitespace only from the start of a string.-->
+    <h1>JavaScript Strings</h1>
+    <h2>The trimStart() Method</h2>
+
+    <p id="demo9"></p>
+
+    <script>
+      let text6 = "     Hello World!     ";
+      let text7 = text6.trimStart();
+
+      document.getElementById("demo9").innerHTML =
+        "Length text1 = " + text6.length + "<br>Length text2 = " + text7.length;
+    </script>
+
+    <!--JavaScript String trimEnd()
+ECMAScript 2019 added the string method trimEnd() to JavaScript.
+
+The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+
+Example-->
+    <h1>JavaScript Strings</h1>
+    <h2>The trimEnd() Method</h2>
+
+    <p id="demo10"></p>
+
+    <script>
+      let text8 = "     Hello World!     ";
+      let text9 = text8.trimEnd();
+
+      document.getElementById("demo10").innerHTML =
+        "Length text = " + text8.length + "<br>Length text2 = " + text9.length;
+    </script>
+
+    <h1>the javascript strings</h1>
+    <h2>the padstart() method</h2>
+
+    <p>the padstart() method pads a string from the start</p>
+    <p>
+      it pads the string with another string(multiple times) until it reaches a
+      given length
+    </p>
+    <p id="demo11"></p>
+    <script>
+      let text10 = "5";
+      text10 = text10.padStart(4, "0");
+      document.getElementById("demo11").innerHTML = text10;
+    </script>
+
+    <h1>JavaScript Strings</h1>
+    <h2>The padStart() Method</h2>
+
+    <p>The padStart() method pads a string from the start.</p>
+    <p>
+      It pads the string with another string (multiple times) until it reaches a
+      given length.
+    </p>
+
+    <p id="demo12"></p>
+
+    <script>
+      let text11 = "5";
+      document.getElementById("demo12").innerHTML = text11.padStart(4, "x");
+      /*The padStart() Method
+The padStart() method pads a string from the start.
+
+It pads the string with another string (multiple times) until it reaches a given length.*/
+    </script>
+
+    <h1>javascript method</h1>
+    <h2>The padend() method</h2>
+    <p>teh padennd()method pads a string at the end</p>
+    <p>
+      it pads the string with another strng(multple times) until it reaches a
+      given length.
+    </p>
+    <p id="demo13"></p>
+
+    <script>
+      let text12 = "5";
+      text12 = text12.padEnd(4, "0");
+
+      document.getElementById("demo13").innerHTML = text12;
+    </script>
+
+    <h1>javascript strings</h1>
+    <h2>the repeat() method</h2>
+
+    <p>repeat() returns a new string with a number of copies of a sting</p>
+    <p id="demo14"></p>
+    <p>repeat() is not supported on internet explorer.</p>
+    <script>
+      let text13 = "hello world!";
+      let result = text13.repeat(8);
+
+      document.getElementById("demo14").innerHTML = result;
+    </script>
+
+    <h1>javascript new methods</h1>
+
+    <p>replace 'microsoft" with "w3schools" in the paragrah below</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo15">please visit Microsoft!</p>
+
+    <script>
+      function myFunction() {
+        let text14 = document.getElementById("demo15").innerHTML;
+        document.getElementById("demo15").innerHTML = text14.replace(
+          "Microsoft",
+          "w3schools"
+        );
+      }
+    </script>
+
+    <!--Note
+The replace() method does not change the string it is called on.
+
+The replace() method returns a new string.
+
+The replace() method replaces only the first match
+
+If you want to replace all matches, use a regular expression with the /g flag set. See examples below.-->
+
+    <h1>JavaScript String Methods</h1>
+    <p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo16">Please visit Microsoft and Microsoft!</p>
+
+    <script>
+      function myFunction() {
+        let text15 = document.getElementById("demo16").innerHTML;
+        document.getElementById("demo16").innerHTML = text15.replace(
+          "Microsoft",
+          "W3Schools"
+        );
+      }
+    </script>
+
+    <!--To replace case insensitive, use a regular expression with an /i flag (insensitive):
+-->
+    <h1>javascript methods</h1>
+    <p>replace "microsoft" with "w3Schools"in the paragraph beloww</p>
+    <button onclick="myFunction1()">try it</button>
+    <p id="demo17">Please visit Microsoft</p>
+    <script>
+      function myFunction1() {
+        let text16 = document.getElementById("demo17").innerHTML;
+        document.getElementById("demo17").innerHTML = text16.replace(
+          /MicroSoFt/i,
+          "W3schools"
+        );
+      }
+    </script>
+    <!--To replace all matches, use a regular expression with a /g flag (global match):-->
+    <h1>Javascript methods</h1>
+    <p>replace all occurencesof "microsoft" and "w3schools" in teh paragraph below</p>
+    <button onclick="myFunction2()">Try it</button>
+    <p id="demo18">Please visit microsoft and w3schools</p>
+    <script>
+      function myFunction2(){
+        let text17 = document.getElementById("demo18").innerHTML;
+        document.getElementById("demo18").innerHTML = text17.replace(/microsoft/g,"w3schools");
+      }
+    </script>
+
+
+<h1>JavaScript Strings</h1>
+<h2>The replaceAll() Method</h2>
+
+<p>ES2021 intoduced the string method replaceAll().</p>
+<p id="demo19">"I love cats. Cats are very easy to love. Cats are very popular."</p>
+
+<button onclick="myfucntion3">Try it</button>
+
+<script>
+  function myfucntion3(){
+let text18 = "I love cats. Cats are very easy to love. Cats are very popular."
+text18 = text18.replaceAll("Cats","Dogs");
+text18 = text18.replaceAll("cats","dogs");
+  
+
+document.getElementById("demo19").innerHTML = text;
+  }
+</script>
+
+
+
+
+<h1>Javascript methods</h1>
+<p>Display the first array element, after a strong split</p>
+
+<p id="demo21"></p>
+<script>
+  let text19 = "a,b,c,d,e,f";
+  const myArray = text19.split(",");
+  document.getElementById("demo21").innerHTML = myArray[0];
+
+</script>
+
+<!--A string can be converted to an array with the split() method:
+
+Example
+text.split(",")    // Split on commas
+text.split(" ")    // Split on spaces
+text.split("|")    // Split on pipe
+If the separator is omitted, the returned array will contain the whole string in index [0].
+
+If the separator is "", the returned array will be an array of single characters:-->
+
+
+
+
+  </body>
+</html>

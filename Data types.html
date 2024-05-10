@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = demo></p>
+    <script>
+        // Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+    </script>
+
+
+
+
+<h2>Javascript data types</h2>
+<p>Strings are written with quotes. You can use single or double quotes:</p>
+<p id="demo1"></p>
+<script>
+    let carname1 = "volvo XC90";
+    let carname2 = 'volvo XC90';
+
+    document.getElementById("demo1").innerHTML = carname1 + "<br>" + carname2
+
+</script>
+
+
+
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+<p id="demo"></p>
+
+<script>
+let y1 = 123e5;
+let z1 = 123e-5;
+
+document.getElementById("demo").innerHTML =
+y1 + "<br>" + z1;
+</script>
+
+
+<p id = "demo2"></p>
+<script>
+    const person1 = {
+        firstName : "john",
+        lastName : "doe",
+        age : 50,
+        eyecolor : "blue"
+
+    };
+
+    document.getElementById('demo2').innerHTML = person1.firstName + " is " + person1.age + " years old.";
+</script>
+
+
+
+<h1>JavaScript Operators</h1>
+<h2>The typeof Operator</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById("demo3").innerHTML = 
+typeof "" + "<br>" +
+typeof "John" + "<br>" + 
+typeof "John Doe" + "<br>" +
+typeof 3.14;
+</script>
+</body>
+</html>

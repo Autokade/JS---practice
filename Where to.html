@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function myFunction() {
+        document.getElementById("demo1").innerHTML = "paragraph changed";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Javscript in body</h2>
+    <p id="demo"></p>
+    <script>
+      document.getElementById("demo").innerHTML = "my first javascript";
+    </script>
+    <h2>Demo javascript is ready</h2>
+    <p id="demo1">A paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+    <!--Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display.-->
+    <h2>Demo external javascript</h2>
+    <p id="demo2">a paragraph</p>
+    <button type="button" onclick="myFunction()">try it</button>
+
+    <p>This example links to "myScript.js".</p>
+    <p>(myFunction is stored in "myScript.js")</p>
+    <script src="myScript.js">
+
+    </script>
+    <!--External JavaScript Advantages
+Placing scripts in external files has some advantages:
+
+It separates HTML and code
+It makes HTML and JavaScript easier to read and maintain
+Cached JavaScript files can speed up page loads
+To add several script files to one page  - use several script tags:-->
+
+
+
+<!--An external script can be referenced in 3 different ways:
+
+With a full URL (a full web address)
+With a file path (like /js/)
+Without any path
+This example uses a full URL to link to myScript.js:-->
+
+
+  </body>
+</html>
